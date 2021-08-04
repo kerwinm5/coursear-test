@@ -1,25 +1,65 @@
 @charset "UTF-8";
 /* set the container as relative position*/
-.container{
-	position: relative;
-	color: lightblue;
+*{
+	box-sizing: border-box;
 }
+.container{
+	background-color: lightgray;
 
+}
+h1 {
+	text-align: center;
+}
+div {
+	margin: 10px;
+}
+p {
+	padding:  30px 10px 10px 10px;
+}
+.row {
+	width: 100%;
+}
+#Title1{
+	margin: 0px;
+	padding: 5px;
+	background-color: blue;
+	width: 70px;
+	text-align: center;
+	float: right;
+}
+#Title2{
+	margin: 0px;
+	padding: 5px;
+	background-color: red;
+	width: 70px;
+	text-align: center;
+	float: right;
+}
+#Title3{
+	margin: 0px;
+	padding: 5px;
+	background-color: yellow;
+	width: 70px;
+	text-align: center;
+	float: right;
+}
 /* this is to start the breakpoints */
 /* desktop at 992 pixels and above */
 @media (min-width: 992px) {
 	.col-lg-3 {
 		float: left;
- 		border: 1px solid black;
+ 		border: 2px solid black;
 		width: 25%;
+		background-color: burlywood;
 	}
 }
 /* tablet between 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-6 {
 		float: left;
- 		border: 1px solid black;
-		width: 50%;
+ 		border: 2px solid black;
+		width: 40%;
+		background-color: burlywood;
 			}
 }
 
@@ -27,8 +67,9 @@
 @media (max-width: 767px) {
 	.col-sm-12 {
 		float: left;
- 		border: 1px solid black;
+ 		border: 2px solid black;
 		width: 100%;
+		background-color: burlywood;
 		}
 	
 }
